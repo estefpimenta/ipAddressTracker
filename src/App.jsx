@@ -1,17 +1,11 @@
 import './App.css'
-import SearchBar from './components/SearchBar/SearchBar';
-import InfoPanel from './components/InfoPanel/InfoPanel';
+import Header from './components/Header/Header'
 
 function App() {
 
   return (
     <>
-      <header>
-        <h1>Rastreador de IP</h1>
-        <SearchBar />
-
-        <InfoPanel />
-      </header>
+      <Header />
 
       <main>
         <p>Projeto iniciado</p>
