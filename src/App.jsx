@@ -1,5 +1,6 @@
 import './App.css'
 import Header from './components/Header/Header'
+import Map from './components/Map/Map'
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
       <Header />
 
       <main>
-        <p>Projeto iniciado</p>
+        <Map />
       </main>
     </>
   )
