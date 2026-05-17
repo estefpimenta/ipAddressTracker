@@ -1,0 +1,22 @@
+
+.info-panel {
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 24px;
+    margin-top: 30px
+}
+
+.info-item h2 {
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: hsl(0, 0%, 58%);
+}
+
+.info-item p {
+  font-size: 20px;
+  font-weight: bold;
+  color: hsl(0, 0%, 17%);
+}

@@ -1,5 +1,6 @@
 import './App.css'
-import SearchBar from './components/SearchBar';
+import SearchBar from './components/SearchBar/SearchBar';
+import InfoPanel from './components/InfoPanel/InfoPanel';
 
 function App() {
 
@@ -8,6 +9,8 @@ function App() {
       <header>
         <h1>Rastreador de IP</h1>
         <SearchBar />
+
+        <InfoPanel />
       </header>
 
       <main>
