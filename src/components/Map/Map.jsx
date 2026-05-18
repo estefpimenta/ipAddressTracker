@@ -6,7 +6,11 @@ import { MapContainer, TileLayer, Marker, Popup,  useMap } from 'react-leaflet'
 function ChangeMapView({ center }) {
   const map = useMap()
 
-  map.setView(center)
+  map.flyTo(center, map.getZoom(), {
+    animate: true,
+    duration: 4,
+    easeLinearity: 0.08,
+  });
 
   return null
 }
