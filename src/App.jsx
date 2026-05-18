@@ -1,7 +1,7 @@
 import './App.css'
 import Header from './components/Header/Header'
 import Map from './components/Map/Map'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 
 function App() {
@@ -20,7 +20,24 @@ function App() {
     },
 
     isp: 'Vivo',
-})
+  })
+
+
+  async function fetchIPData(ip = '') {
+    try {
+      const response = await fetch(
+        `https://geo.ipify.org/api/v2/country,city?apiKey=${
+          import.meta.env.VITE_IPIFY_API_KEY
+        }&ipAddress=${ip}`
+      )
+
+      const data = await response.json()
+
+      setIpData(data)
+    } catch (error) {
+      console.error(error)
+    }
+  }
 
   return (
     <>
