@@ -2,9 +2,12 @@ import './Map.css'
 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
-function Map() {
+function Map({ ipData }) {
 
-    const position = [-23.5275, -46.6315]
+    const position = [
+        ipData.location.lat,
+        ipData.location.lng
+    ]
 
     return(
 

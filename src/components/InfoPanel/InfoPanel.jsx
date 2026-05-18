@@ -1,6 +1,6 @@
 import './InfoPanel.css';
 
-function InfoPanel() {
+function InfoPanel({ ipData }) {
 
 
     return(
@@ -8,22 +8,22 @@ function InfoPanel() {
 
             <div className="info-item">
                 <h2>IP ADRESS</h2>
-                <p>192.212.174.101</p>
+                <p>{ipData.ip}</p>
             </div>
 
             <div className="info-item">
                 <h2>LOCALIZAÇÃO</h2>
-                <p>San Francisco, CA 94107</p>
+                <p>{ipData.location.city}, {ipData.location.region}</p>
             </div>
 
             <div className="info-item">
                 <h2>TIMEZONE</h2>
-                <p>-08:00</p>
+                <p>{ipData.location.timezone}</p>
             </div>
 
             <div className="info-item">
                 <h2>ISP</h2>
-                <p>Comcast Cable Communications, LLC</p>
+                <p>{ipData.isp}</p>
             </div>
 
         </section>

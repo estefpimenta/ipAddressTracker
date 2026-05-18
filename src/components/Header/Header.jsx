@@ -3,14 +3,14 @@ import './Header.css';
 import SearchBar from '../SearchBar/SearchBar';
 import InfoPanel from '../InfoPanel/InfoPanel';
 
-function Header() {
+function Header({ ipData }) {
 
 
     return(
         <header className='header'>
             <h1>Rastreador de IP</h1>
             <SearchBar />
-            <InfoPanel />
+            <InfoPanel ipData={ipData} />
         </header>
     )
 }
