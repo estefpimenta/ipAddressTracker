@@ -39,9 +39,15 @@ function App() {
     }
   }
 
+  useEffect(() => {
+    fetchIPData()
+  }, [])
+
   return (
     <>
-      <Header  ipData={ipData}/>
+      <Header
+        ipData={ipData}
+        fetchIPData={fetchIPData}/>
 
       <main>
         <Map ipData={ipData} />
