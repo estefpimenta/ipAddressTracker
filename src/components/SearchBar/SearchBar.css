@@ -32,6 +32,10 @@
   border: none;
 }
 
+.search-bar button:hover {
+  background-color: #333;
+}
+
 .loading-icon {
   animation: spin 2s linear infinite;
 }
