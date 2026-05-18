@@ -19,7 +19,9 @@ function Header({ ipData, fetchIPData, isLoading, error }) {
                 </div>
             )}
 
-            <InfoPanel ipData={ipData} />
+            <InfoPanel 
+                ipData={ipData} 
+                isLoading={isLoading} />
         </header>
     )
 }

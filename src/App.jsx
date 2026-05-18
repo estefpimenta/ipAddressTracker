@@ -1,4 +1,4 @@
-import './App.css'
+
 import Header from './components/Header/Header'
 import Map from './components/Map/Map'
 import { useState, useEffect } from 'react'
@@ -48,7 +48,7 @@ function App() {
 
       const data = await response.json()
 
-      
+      await new Promise(resolve => setTimeout(resolve, 1000))
       setIpData(data)
     
     } catch (error) {

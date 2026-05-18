@@ -37,11 +37,33 @@
 }
 
 .info-item p {
-  font-size: 20px;
-  font-weight: bold;
+  min-height: 32px;
+
+  display: flex;
+  align-items: center;
+
   color: hsl(0, 0%, 17%);
+  font-size: 24px;
+  font-weight: 500;
 }
 
+.info-loading-icon {
+  width: 28px;
+  height: 28px;
+
+  object-fit: contain;
+
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 
 /* Responsive Design */
