@@ -8,7 +8,7 @@ O foco foi desenvolver uma interface moderna, responsiva e fluida**, aplicando c
 
 ## 📸 Preview
 
-<img src="./src/assets/preview.jpg" alt="Preview do projeto">
+<img src="/preview.png" alt="Preview do IP Address Tracker" width="600">
 
 ---
 
