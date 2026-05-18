@@ -2,6 +2,16 @@ import './Map.css'
 
 import { MapContainer, TileLayer, Marker, Popup,  useMap } from 'react-leaflet'
 
+
+function ChangeMapView({ center }) {
+  const map = useMap()
+
+  map.setView(center)
+
+  return null
+}
+
+
 function Map({ ipData }) {
 
     const position = [
@@ -17,6 +27,7 @@ function Map({ ipData }) {
                 zoom={12}
                 scrollWheelZoom={true}
             >
+                <ChangeMapView center={position} />
 
                 <TileLayer
                     attribution='&copy; OpenStreetMap contributors'
