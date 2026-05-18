@@ -7,3 +7,10 @@
 
   background-color: #dcdcdc;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .map {
+    min-height: 100vh;
+  }
+}

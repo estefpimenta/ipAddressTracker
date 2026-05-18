@@ -21,6 +21,13 @@
   flex: 1;
 }
 
+.info-item:not(:last-child) {
+  border-right: 1px solid hsl(0, 0%, 58%);
+
+
+  padding-right: 32px;
+}
+
 .info-item h2 {
   font-size: 12px;
   font-weight: 700;
@@ -33,4 +40,36 @@
   font-size: 20px;
   font-weight: bold;
   color: hsl(0, 0%, 17%);
+}
+
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .info-panel {
+    flex-direction: column;
+
+    gap: 24px;
+
+    text-align: center;
+
+    padding: 24px;
+
+    bottom: -140px;
+  }
+
+  .info-item p {
+    font-size: 20px;
+  }
+
+  .info-item:not(:last-child) {
+  border-right: none;
+
+  padding-right: 0;
+
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid #dcdcdc;
+}
 }

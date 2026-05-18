@@ -22,3 +22,16 @@
   font-size: 28px;
   font-weight: 500;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    min-height: 550px;
+
+    background-image: url('../../assets/pattern-bg-mobile.png');
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+}

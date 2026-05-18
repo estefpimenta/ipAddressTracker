@@ -32,3 +32,15 @@
   border-radius: 0 12px 12px 0;
   border: none;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-bar {
+    width: 100%;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+    
+  }
+}
