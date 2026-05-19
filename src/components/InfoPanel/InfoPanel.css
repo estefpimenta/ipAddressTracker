@@ -11,8 +11,8 @@
     max-width: 1100px;
 
     position: absolute;
-    bottom: -40px;
-    z-index: 1000;
+    bottom: -90px;
+    z-index: 9999;
 
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }

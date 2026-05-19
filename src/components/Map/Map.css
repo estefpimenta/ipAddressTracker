@@ -2,11 +2,16 @@
 
 .map {
   height: 70vh;
+
+  position: relative;
+  z-index: 0;
 }
 
 .leaflet-container {
   height: 100%;
   width: 100%;
+  position: relative;
+  z-index: 0;
 }
 
 /* Responsive Design */
