@@ -3,7 +3,7 @@ import './Header.css';
 import SearchBar from '../SearchBar/SearchBar';
 import InfoPanel from '../InfoPanel/InfoPanel';
 
-function Header({ ipData, fetchIPData, isLoading, error }) {
+function Header({ ipData, fetchIPData, isLoading, error, weatherData }) {
 
 
     return(
@@ -21,7 +21,8 @@ function Header({ ipData, fetchIPData, isLoading, error }) {
 
             <InfoPanel 
                 ipData={ipData} 
-                isLoading={isLoading} />
+                isLoading={isLoading} 
+                weatherData={weatherData} />
         </header>
     )
 }

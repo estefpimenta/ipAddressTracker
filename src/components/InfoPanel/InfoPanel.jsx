@@ -15,7 +15,7 @@ function renderValue(isLoading, value) {
   )
  }
 
-function InfoPanel({ ipData, isLoading }) {
+function InfoPanel({ ipData, isLoading, weatherData }) {
 
 
     return(
@@ -39,6 +39,11 @@ function InfoPanel({ ipData, isLoading }) {
             <div className="info-item">
                 <h2>ISP</h2>
                 <p>{renderValue(isLoading, ipData.isp)}</p>
+            </div>
+
+            <div className="info-item">
+                <h2>TEMPERATURA</h2>
+                <p>{renderValue(isLoading, weatherData ? `${weatherData.temperature}°C` : null)}</p>
             </div>
 
         </section>

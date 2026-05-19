@@ -55,7 +55,7 @@ function App() {
       )
 
       const weather = await weatherResponse.json()
-      console.log(weather)
+      
       await new Promise(resolve => setTimeout(resolve, 1000))
       setIpData(data)
 
@@ -85,6 +85,7 @@ function App() {
         fetchIPData={fetchIPData}
         isLoading={isLoading}
         error={error}
+        weatherData={weatherData}
         />
       
       <main>
