@@ -26,6 +26,8 @@ function App() {
 
   const [error, setError] = useState(null);
 
+  const [weatherData, setWeatherData] = useState(null)
+
   async function fetchIPData(ip = '') {
     try {
 
@@ -48,8 +50,19 @@ function App() {
 
       const data = await response.json()
 
+      const weatherResponse = await fetch(
+        `https://api.open-meteo.com/v1/forecast?latitude=${data.location.lat}&longitude=${data.location.lng}&current=is_day,temperature_2m`
+      )
+
+      const weather = await weatherResponse.json()
+      console.log(weather)
       await new Promise(resolve => setTimeout(resolve, 1000))
       setIpData(data)
+
+      setWeatherData({
+      temperature: weather.current.temperature_2m,
+      isDay: weather.current.is_day === 1
+      })
     
     } catch (error) {
       console.error(error)
