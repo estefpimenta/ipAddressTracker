@@ -8,12 +8,9 @@ O foco foi desenvolver uma interface moderna, responsiva e fluida**, aplicando c
 
 ## 📸 Preview
 
-<img src="./src/assets/videoPreview.gif" alt="Preview do IP Address Tracker">
+<img src="./src/assets/gifPreview.gif" alt="Preview do IP Address Tracker">
 
-<video width="600" autoplay muted loop>
-  <source src="./src/assets/videoPreview.mp4" type="video/mp4">
-  Seu navegador não suporta a tag video.
-</video>
+
 
 ---
 
