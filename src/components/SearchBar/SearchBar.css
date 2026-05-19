@@ -9,7 +9,8 @@
 
 .search-bar input {
   padding: 18px 20px;
-  width: 300px;
+  width: auto;
+  min-width: 0;
   border-radius: 12px 0 0 12px;
   font-size: 18px;
   border: none;
@@ -55,11 +56,15 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .search-bar {
-    width: 100%;
+    width: calc(100% - 32px);
+    margin: 12px auto;
+    max-width: 520px;
   }
 
   .search-bar input {
     font-size: 14px;
+    padding: 12px 14px;
+    border-radius: 10px 0 0 10px;
     
   }
 }

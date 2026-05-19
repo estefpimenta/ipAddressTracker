@@ -17,6 +17,6 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .map {
-    min-height: 100vh;
+    min-height: 40vh;
   }
 }

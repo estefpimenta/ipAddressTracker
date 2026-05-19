@@ -113,7 +113,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .header {
-    min-height: 550px;
+    min-height: 420px;
 
     background-image: url('../../assets/pattern-bg-mobile.png');
   }
