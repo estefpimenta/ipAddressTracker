@@ -5,14 +5,16 @@ import InfoPanel from '../InfoPanel/InfoPanel';
 import dayVideo from '../../assets/videos/video-bg-day.mp4';
 import nightVideo from '../../assets/videos/video-bg-night.mp4';
 
-function Header({ ipData, fetchIPData, isLoading, error, weatherData }) {
+function Header({ ipData, fetchIPData, isLoading, error, weatherData, theme }) {
 
 
     const isNight = weatherData && !weatherData.isDay
 
+    
+
 
     return(
-        <header className='header'>
+        <header className='header'  data-theme={theme}>
 
             <video autoPlay muted loop playsInline className='header-video' key={isNight ? 'night' : 'day'}>
                 <source src={isNight ? nightVideo : dayVideo} type="video/mp4" />
@@ -37,6 +39,7 @@ function Header({ ipData, fetchIPData, isLoading, error, weatherData }) {
                     ipData={ipData} 
                     isLoading={isLoading} 
                     weatherData={weatherData}
+                    theme={theme}
                 />
 
             </div>

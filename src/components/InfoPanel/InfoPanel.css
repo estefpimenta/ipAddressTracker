@@ -15,6 +15,23 @@
     z-index: 9999;
 
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+    transition: all 0.4s ease;
+}
+
+.header[data-theme="day"] .info-panel {
+  background: rgba(255, 255, 255, 0.9);
+  color: #0f172a;
+}
+
+.header[data-theme="night"] .info-panel {
+  background: rgba(17, 28, 46, 0.85);
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.header[data-theme="night"] .info-panel .info-item p {
+  color: white;
 }
 
 .info-item {
@@ -42,7 +59,7 @@
   display: flex;
   align-items: center;
 
-  color: hsl(0, 0%, 17%);
+  color: #0f172a;
   font-size: 24px;
   font-weight: 500;
 }

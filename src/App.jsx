@@ -28,6 +28,10 @@ function App() {
 
   const [weatherData, setWeatherData] = useState(null)
 
+  const isNight = weatherData && !weatherData.isDay
+
+  const theme = isNight ? 'night' : 'day'
+
   async function fetchIPData(ip = '') {
     try {
 
@@ -86,6 +90,7 @@ function App() {
         isLoading={isLoading}
         error={error}
         weatherData={weatherData}
+        theme={theme}
         />
       
       <main>
